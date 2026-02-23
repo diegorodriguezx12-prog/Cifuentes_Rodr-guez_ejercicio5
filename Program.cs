@@ -44,4 +44,84 @@ else if (opcioncredito < 1 && opcioncredito > 4)
     return;
 }
 
-   
+switch (opcion)
+{
+    case 1:
+        if (opcioncredito <= 2 && meses >= 6 && ingresomensual >= 3000)
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("Perfil de bajo riesgo");
+            Console.WriteLine("----------------");
+        }
+        else if (opcioncredito <= 4 && meses >= 6 && ingresomensual >= 3000 && fiador == "Si")
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("----------------");
+        }
+        else
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo negado");
+            Console.WriteLine("----------------");
+        }
+        break;
+    case 2:
+        if (opcioncredito <= 2 && ingresomensual >= 4000 && meses >= 4)
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("Perfil de bajo riesgo");
+            Console.WriteLine("----------------");
+        }
+        else if (opcioncredito <= 4 && meses >= 4 && ingresomensual >= 4000 && fiador == "Si")
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("----------------");
+        }
+        else
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo negado");
+            Console.WriteLine("----------------");
+        }
+            break;
+    case 3:
+        if (opcioncredito <=2 && ingresomensual >= 5000)
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("Perfil de bajo riesgo");
+            Console.WriteLine("----------------");
+        }
+        else if (opcioncredito <= 4 && ingresomensual >= 6000 && fiador == "Si")
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("----------------");
+        }
+        else
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo negado");
+            Console.WriteLine("----------------");
+        }
+        break;
+    case 4:
+        if (opcioncredito == 1 && fiador == "Si" && ingresomensual >= 2000)
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo aprobado");
+            Console.WriteLine("Perfil de bajo riesgo");
+            Console.WriteLine("----------------");
+        }
+        else
+        {
+            Console.WriteLine("----------------");
+            Console.WriteLine("Préstamo negado");
+            Console.WriteLine("----------------");
+        }
+        break;
+}
